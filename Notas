@@ -1,0 +1,45 @@
+$ docker run -p 3306:3306 --name docker-mysql -e MYSQL_ROOT_PASSWORD=myRootpwd32 -d mysql:5.7
+container id in windows -> 	 $ docker start ce43badca0aa
+
+https://geowarin.github.io/a-simple-spring-boot-and-jersey-application.html
+
+cliente rest
+https://www.mkyong.com/webservices/jax-rs/restful-java-client-with-jersey-client/
+
+http://localhost:8080/dragonApi/users GET
+
+POST:
+{
+"name": "juan",
+"gender": "M",
+"address": "Madrid"
+}
+
+{
+"name": "Maria",
+"gender": "F",
+"address": "Málaga",
+"birthdate": "10/04/1997",
+"nacionality": "ESP",
+"corporate": true,
+"role": "admin"
+}
+
+PUT:
+{
+"id": "1",
+"name": "Juan García",
+"gender": "M",
+"address": "Madrid"
+}
+
+DELETE
+http://localhost:8080/dragonApi/users/4
+
+Realizar reserva:
+POST http://localhost:8080/dragonApi/bookings/user/1/flight/1873
+
+Buscar vuelos:
+GET 
+http://localhost:8080/dragonApi/flights/origin/Sar Mell/destination/Bhorash/order/price/results/-1
+http://localhost:8080/dragonApi/flights/origin/Asshai/destination/Myr/order/duration/results/2
